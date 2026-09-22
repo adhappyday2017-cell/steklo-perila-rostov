@@ -29,7 +29,7 @@ var e={w:1e3,hStairs:640,hFlat:400},t=[[`0%`,`#EDEFEF`],[`18%`,`#C6CBCC`],[`42%`
       <polygon points="${o}" fill="url(#rl-metal)"/>
       <polygon points="${s}" fill="#FFFFFF" opacity=".45"/>
       <polygon points="${o}" fill="none" stroke="#000" stroke-opacity=".16"/>
-    </g>`)}return n.join(``)}function l(e){return[e.object,e.mount,e.handrail,e.metal?`m`:`x`,e.panels].join(`|`)}function u(t){let l=t.object===`stairs`?r(t.panels):i(t.panels),u=l.panels.map((e,t)=>o(e,t,120+t*90)).join(``),d=t.object===`stairs`?e.hStairs:e.hFlat,f=l.y0+(l.rise?30:26);return`<svg class="rl" viewBox="0 0 ${e.w} ${d}" role="img"
+    </g>`)}return n.join(``)}function l(e){return[e.object,e.mount,e.handrail,e.metal?`m`:`x`,e.panels].join(`|`)}function u(t){let l=t.object===`stairs`?r(t.panels):i(t.panels),u=l.panels.map((e,t)=>o(e,t,120+t*90)).join(``),d=t.object===`stairs`?e.hStairs:e.hFlat,f=l.y0+(l.rise?30:26);return`<svg class="rl" viewBox="0 0 ${e.w} ${d}" width="${e.w}" height="${d}" role="img"
     aria-label="Схема стеклянного ограждения: ${t.aria}" xmlns="http://www.w3.org/2000/svg">
     <defs>
       ${n(`rl-metal`)}
